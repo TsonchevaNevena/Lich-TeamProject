@@ -83,5 +83,20 @@ namespace LichtOut
         {
             this.pnl_startGame.Visible = true;
         }
+
+        private void LichtOut_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TileClick(object sender, EventArgs e)
+        {
+            LightTile check = (LightTile)sender;
+
+            foreach (var tile in check.Neighbours)
+            {
+                tile.On = !tile.On;
+            }
+        }
     }
 }

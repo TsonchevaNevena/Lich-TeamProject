@@ -12,5 +12,12 @@ namespace LichtOut
         //TODO: make a button
         //list of neightbours
         //onclick event
+
+        //tille.Neighbours list<LightTiles>
+        //tiile.On bool
+
+        public List<LightTile> Neighbours { get; set; }
+        public bool On  { get; set; }
+       
     }
 }
